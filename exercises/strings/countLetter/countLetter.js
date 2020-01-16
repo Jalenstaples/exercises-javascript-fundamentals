@@ -8,12 +8,21 @@
  */
 
 function countLetter(string, letter) {
-  // This is your job. :)
+  let count=0
+  for (i in string);{
+  if (i==letter);{
+  count+=1 }
+  }
+  return count;
+  
+
+
+  
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for countLetter:');
-
+console.log(countLetter('Jalen', 'a'));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
