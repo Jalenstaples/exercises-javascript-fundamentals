@@ -10,12 +10,16 @@
  * @returns {string} A capitalized copy of the string
  */
 
-function capitalize(num) {
+function capitalize(string) {
+  console.log (string[0])
   // This is your job. :)
+let len=string.length;
+return string[0].toUpperCase() + string.slice(1,len)
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for capitalize:');
+  console.log (capitalize('happy'));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
