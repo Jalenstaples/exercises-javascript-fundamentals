@@ -15,7 +15,11 @@
  */
 function isOdd(num) {
   // Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
-  return _____;
+  if (num%2===0){
+  return false;
+  } else {
+  return true;
+}
 }
 
 if (require.main === module) {
@@ -23,7 +27,7 @@ if (require.main === module) {
 
   console.log('Running sanity checks for isOdd');
 
-  console.log(isOdd(0) === false);
+  console.log(isOdd(-3) === false);
 
   // These should all be odd
   for (let num of oddInputs) {
