@@ -13,10 +13,18 @@
  */
 function countOdds(array) {
   // This is your job. :)
+let count=0;
+for (let i of array){
+if (i%2>0){
+  count+=1;}
 }
+return count;
+}
+
 
 if (require.main === module) {
   console.log('Running sanity checks for countOdds:');
+  console.log(countOdds([1,4,7,8,6,12]));
 }
 
 module.exports = countOdds;
