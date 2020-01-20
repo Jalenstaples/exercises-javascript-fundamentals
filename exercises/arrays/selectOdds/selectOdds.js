@@ -15,11 +15,17 @@
  */
 function selectOdds(array) {
   // This is your job. :)
+let count=[];
+for(let i of array){
+if (i%2>0) {
+  count.push(i);}
+}
+return count;
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for selectOdds:');
-
+console.log(selectOdds([1,5,6,8,4,1,2]));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
