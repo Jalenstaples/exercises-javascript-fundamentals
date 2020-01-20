@@ -11,6 +11,15 @@
  * @returns {boolean} True if num is prime and false otherwise
  */
 function isPrime(num) {
+ 
+  for (let i=2;i<num;i+=1){
+    if(num%i==0)
+    return false;  }
+  
+    return true;
+  }
+
+
   /*
     Your code goes here.
 
@@ -20,11 +29,11 @@ function isPrime(num) {
     and use pen/paper, index cards, etc. — anything that helps you think
     about it without getting stuck in JavaScript syntax.
   */
-}
+
 
 if (require.main === module) {
   console.log('Running sanity checks for isPrime:');
-
+console.log(isPrime(17));
   console.log(isPrime(1) === false);
   console.log(isPrime(2) === true);
   console.log(isPrime(4) === false);
