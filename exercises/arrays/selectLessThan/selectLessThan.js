@@ -18,11 +18,17 @@
  */
 function selectLessThan(array, threshold) {
   // This is your job. :)
+let count=[];
+for (let i of array){
+if (i<threshold) {
+  count.push(i);}
+}
+return count;
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for selectLessThan:');
-
+console.log(selectLessThan([7,8,9,10,11,12,13],13));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
