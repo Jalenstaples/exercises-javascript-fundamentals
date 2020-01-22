@@ -17,14 +17,21 @@
  *  strictly greater than the threshold
  */
 function selectGreaterThan(array, threshold) {
-  // This is your job. :)
+let count=[];
+for(let i of array) {
+  if (i>threshold) {
+  count.push(i);}
 }
+return count;
+}
+
 
 if (require.main === module) {
   console.log('Running sanity checks for selectGreaterThan:');
-
+console.log(selectGreaterThan([4,5,6,7,8,9],6));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
 
 module.exports = selectGreaterThan;
+
