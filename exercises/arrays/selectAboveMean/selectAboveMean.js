@@ -15,12 +15,27 @@
  *   greater than the mean.
  */
 function selectAboveMean(array) {
-  // This is your job. :)
+let greaterthanaverage=[];
+let count=0;
+for (let i of array){
+  count+=i;
+} let avg=count/array.length;
+
+
+
+for (let i of array) {
+  if (i>avg){
+  greaterthanaverage.push(i);}
+}
+return greaterthanaverage;
 }
 
-if (require.main === module) {
-  console.log('Running sanity checks for selectAboveMean:');
 
+
+
+if (require.main === module) {
+console.log('Running sanity checks for selectAboveMean:');
+console.log(selectAboveMean([11,12,13,14,15,16]));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
