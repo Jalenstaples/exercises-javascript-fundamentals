@@ -14,14 +14,24 @@
  *   and false otherwise.
  */
 function anyPositive(array) {
-  // This is your job. :)
+  // This is your job. :
+  for (let i of array){
+    if (i>0) {
+   return true;
+    }
+ else {
+return false;
+}
+}
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for anyPositive:');
-
+console.log(anyPositive([1,-2,4]));
+console.log(anyPositive([1,2,4]));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
 
 module.exports = anyPositive;
+
