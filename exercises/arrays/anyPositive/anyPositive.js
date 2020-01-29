@@ -34,4 +34,3 @@ console.log(anyPositive([1,2,4]));
 }
 
 module.exports = anyPositive;
-

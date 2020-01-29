@@ -31,4 +31,3 @@ console.log(selectEvens([1,5,6,8,4,1,2]));
 }
 
 module.exports = selectEvens;
-
