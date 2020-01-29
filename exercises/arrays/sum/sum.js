@@ -15,7 +15,7 @@ let count=0;
 for (let i in array) {
   
   count+=array[i] }
-  return count;
+  count/array.length
 }
 
 
@@ -28,4 +28,3 @@ console.log(sum(array));
 }
 
 module.exports = sum;
-

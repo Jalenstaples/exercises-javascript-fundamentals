@@ -16,4 +16,3 @@ console.log(celsiusToFahrenheit(3));
 }
 
 module.exports = celsiusToFahrenheit;
-

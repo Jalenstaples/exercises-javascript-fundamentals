@@ -29,8 +29,7 @@
  */
 
 function rot13(string) {
-  // This is your job. :)
-}
+  
 
 if (require.main === module) {
   console.log('Running sanity checks for rot13:');
